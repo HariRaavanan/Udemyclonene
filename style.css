@@ -13,6 +13,10 @@ font-family: 'Gabrito',sans-serif;
     border-bottom: solid black 1px;
     gap: 10px;
     align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
 
 }
 .navbar__s1__title{
@@ -25,7 +29,9 @@ font-family: 'Gabrito',sans-serif;
     border-radius: 30px;
     width: 60%;
     display:flex;
-    gap:10px
+    gap:10px;
+    
+    
     
 }
 .navbar__s2 input{
@@ -33,6 +39,7 @@ font-family: 'Gabrito',sans-serif;
     width: 100%;
     font-size: 16px;
     align-items: center;
+    background-color: transparent;
 }
 .navbar__s2 input:focus{
     outline: none;
@@ -40,6 +47,24 @@ font-family: 'Gabrito',sans-serif;
 .navbar__s3{
     display: flex;
     gap: 10px;
+}
+.mylearnings{
+    position: relative;
+    cursor: pointer;
+
+}
+.mylearnings__popup{
+    position: absolute;
+    background-color: white;
+    border: solid black 2px;
+    width: 100px;
+    padding: 10px;
+    top:150%;
+    right:0px;
+    display: none;
+}
+.mylearnings:hover .mylearnings__popup{
+    display: block;
 }
 .categories{
     display: flex;
@@ -54,8 +79,20 @@ font-family: 'Gabrito',sans-serif;
     padding: 10px;
 
 }
+.sale-image{
+    position: relative;
+}
 .sale-image img{
     width:100%;
+}
+.offer{
+    width: 35%;
+    background-color: white;
+    border: solid black 2px;
+    padding:2px;
+    position: absolute;
+    top:30px;
+
 }
 .recommended{
     padding:10px;
